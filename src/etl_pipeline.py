@@ -60,6 +60,10 @@ def main():
     save_to_duckdb(features_df, db_path, "features")
     save_to_duckdb(statistics, db_path, "statistics")
 
+    # Pandas, to csv
+    features_df.toPandas().to_csv('data/features.csv', index=False)
+    statistics.toPandas().to_csv('data/statistics.csv', index=False)
+
     logger.info(f"ETL pipeline completed, saved data to DuckDB at {db_path}")
 
 if __name__ == '__main__':
