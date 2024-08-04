@@ -13,7 +13,9 @@ This method allows you to interact with the database directly from the command l
 1. Open a terminal and navigate to the root directory of the project.
 
 2. Run the DuckDB executable with the database file:
+```bash
 ./bin/duckdb data/robot_data.db
+```
 3. You will now have a DuckDB prompt where you can interact with the database directly. For example:
 ```sql
 SHOW tables;
