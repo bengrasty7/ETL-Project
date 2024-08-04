@@ -21,16 +21,20 @@ This method allows you to interact with the database directly from the command l
 SHOW tables;
 SELECT * FROM your_table LIMIT 5;
 ```
+There are 2 tables: features, statistics
 
 To exit the DuckDB prompt, type .quit
+
+If the executable does not work, install duckdb on your machine, and configure the path such that it has access to the database file
 
 ### 2. Using DuckDB in Python
 This method allows you to access the database within your Python scripts.
 
 1. Install DuckDB if you haven't already:
+```bash
 pip install duckdb
-
-2. In your Python script, use the following code to connect to the database:
+```
+3. In your Python script, use the following code to connect to the database:
 ```python
 import duckdb
 
