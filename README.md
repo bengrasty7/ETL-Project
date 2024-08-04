@@ -4,7 +4,9 @@
 
 First, install the required dependencies found in requirements.txt
 
-There are two ways to access the data using DuckDB:
+There are two ways to access the data using DuckDB. DuckDB is an in-process SQL OLAP database management system. Similar to SQLite but for OLAP queries.
+https://duckdb.org/docs/ 
+
 
 ### 1. Using the DuckDB CLI Executable
 
