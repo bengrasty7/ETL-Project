@@ -54,6 +54,9 @@ db.close()
 
 Both methods allow you to interact with the same database file, so you can choose the approach that best fits your workflow.
 
+### 3. Using Pandas
+If you are having trouble with duckdb, each of the 2 tables is located in a csv file in the data/ directory. Simply read in with pandas (pd.read_csv(path)) to explore data
+
 ## Pipeline Flow
 The pipeline follows a sequential flow from A to D. etl_pipeline.py orchestrates the pipeline.
 
