@@ -34,13 +34,13 @@ This method allows you to access the database within your Python scripts.
 ```bash
 pip install duckdb
 ```
-3. In your Python script, use the following code to connect to the database:
+2. In your Python script, use the following code to connect to the database:
 ```python
 import duckdb
 
 db = duckdb.connect('data/robot_data.db')
 ```
-Execute queries on the database:
+3. Execute queries on the database:
 ```python
 result = db.execute("SELECT * FROM your_table LIMIT 5")
 print(result.fetchall())
