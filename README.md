@@ -9,24 +9,38 @@ https://duckdb.org/docs/
 
 
 ### 1. Using the DuckDB CLI Executable
+1. Download DuckDB CLI
+Go to the DuckDB Releases Page:
+Visit the DuckDB releases page on GitHub.
 
-This method allows you to interact with the database directly from the command line.
-
-1. Open a terminal and navigate to the root directory of the project.
-
-2. Run the DuckDB executable with the database file:
+2. Extract the ZIP File
+3. Move the CLI Binary to a Directory in Your PATH
 ```bash
-./bin/duckdb data/robot_data.db
+sudo mv duckdb /usr/local/bin
 ```
-3. You will now have a DuckDB prompt where you can interact with the database directly. For example:
+4. Verify Installation
+Open Your Command Line Interface:
+```bash
+duckdb --version
+```
+You should see the version number of DuckDB if it was installed correctly.
+5. Open a DuckDB Database File
+Navigate to Your Project Directory:
+```bash
+duckdb data/robot_data.db
+```
+This will open the DuckDB CLI with mydatabase.db as the active database.
+6. You will now have a DuckDB prompt where you can interact with the database directly. For example:
 ```sql
 SHOW tables;
 SELECT * FROM your_table LIMIT 5;
 ```
 There are 2 tables: features, statistics
 
-To exit the DuckDB prompt, type .quit
-
+To exit the DuckDB prompt, type 
+```bash
+.quit
+```
 If the executable does not work, install duckdb on your machine, and configure the path such that it has access to the database file
 
 ### 2. Using DuckDB in Python
